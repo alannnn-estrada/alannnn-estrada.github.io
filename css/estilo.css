@@ -1,0 +1,11 @@
+html {
+    font-size: 13px;
+}
+
+*{
+    font-family: 'Gugi', cursive;
+}
+
+[class*="text-color"]{
+    color: white;
+}
