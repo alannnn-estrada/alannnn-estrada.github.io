@@ -1,5 +1,7 @@
 html {
     font-size: 13px;
+    margin: 0px;
+    padding: 0px;
 }
 
 *{
@@ -9,3 +11,24 @@ html {
 [class*="text-color"]{
     color: white;
 }
+
+[class*="text-html"]{
+    color: #e34c26;
+}
+
+[class*="text-python"]{
+    color: #3572A5;
+}
+
+[class*="text-java"]{
+    color: #f1e05a;
+}
+
+[class*="text-js"]{
+    color: #b07219;
+}
+
+[class*="text-list"]{
+    color: #592EC4;
+}
+
