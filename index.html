@@ -19,29 +19,114 @@
             position: fixed;
             z-index: -1 !important;
         }
-
+        .navbar{
+            background-color: transparent!important;
+            backdrop-filter: blur(5px);
+        }
+        .habilidades{
+            text-decoration: none;
+            color: gold;
+        }
+        .habilidades:hover{
+            color: darkkhaki;
+        }
     </style>
     <title>Mi Pagina Web</title>
 </head>
 <body class="bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark py-1 fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="https://github.com/alannnn-estrada"><strong style="color: rgb(248, 241, 241);">Alann Estrada</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Repositorios">Repositorios GITHUB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Proyectos">Proyectos Web</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Spotify">Spotify Playlist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Habilidades" onclick="mostrarContenido('Habilidades')">Habilidades</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </div>
     <header>
         <div id="particles-js"></div>
-        <div class="container py-5 mt-5 text-center">
+        <div class="container mt-5 text-center">
             <div class="text-center">
                 <a href="https://github.com/alannnn-estrada"><img src="img/SOY YO DE NUEVOXDD.jpg" alt="FOTO DEL CREADOR" height="auto" width="260" class="img-fluid rounded-circle mb-4"></a>
                 <h4 class="text-center text-color mb-4">Alann Estrada</h4>
-                <p class="text-center text-color mb-4">Enérgico desarrollador apasionado por los videojuegos, la programación e inteligencias artificiales. Con un
+                <p class="text-center text-color">Enérgico desarrollador apasionado por los videojuegos, la programación e inteligencias artificiales. Con un
                 alto compromiso de responsabilidad en cada proyecto, busco constantemente innovar y encontrar soluciones óptimas para
                 abordar desafíos. Siempre dispuesto a dar lo mejor de mí en cada línea de código y en cada paso hacia el futuro
                 tecnológico. </p>
-                <p class="text-center text-warning" style="margin-top: -20px;">Algunos de los lenguajes que puedo manejar son: JavaScript, Python, Java. Y algunos lenguajes de marcas: HTML, CSS, CSS-Bootstrap. Sé manejar sistemas operativos como Windows y un poco de Linux.</p>
+                <a class="habilidades" href="#Habilidades" onclick="mostrarContenido('Habilidades')">Habilidades</a>
             </div>
-            <h2 class="text-center text-color"> Aquí podrás encontrar el repositorio de algunos de mis proyectos, algunos enlaces de contacto, información sobre mí y algunos pasatiempos míos.:</h2>
         </div>
-        <div class="container py-3 text-center ">
+        <div class="container text-warning text-center mt-3" id="Habilidades" style="display: none;">
+            <h4>Tengo conocimientos en siguientes lenguajes</h4>
+            <span class=" badge bg-dark mb-1">
+                <h4 class="language" data-language="PHP">PHP 30%</h4>
+                <h4 class="language" data-language="HTML">HTML 50%</h4>
+                <h4 class="language" data-language="CSS">CSS 50%</h4>
+                <h4 class="language" data-language="CSS">CSS/BOOTSTRAP 50%</h4>
+                <h4 class="language" data-language="JavaScript">JavaScript 10%</h4>
+                <h4 class="language" data-language="Java">Java 30%</h4>
+                <h4 class="language" data-language="Python">Python 10%</h4>
+                <h4 class="language" data-language="Objective-C++">C++ 10%</h4>
+                <h4 class="language" data-language="SQL">SQL 25%</h4>
+            </span>
+            <h5>Todos estos conocimientos se ven reflejados en mis proyectos (Estos son estimados, no son exactos).</h5>
+            <p>Me considero una persona que busca alternativas a las problemáticas que pueden surgir en los proyectos. </p>
+        </div>
+        <div class="container py-3 text-center">
+            
+            <div id="Repositorios"></div>
+            <h3 class="text-center text-color">Algunos de mis repositorios en GITHUB:</h3>
+            <p class="text-center text-success">"Te recomiendo visitar los repositorios con ⭐ ya que son los mas recientes o se mantienen actualizados constantemente :D."</p>
 
-            <div class="text-color text-center">
-                <h3>Mis redes sociales:</h3>
+            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
+                <a href="https://github.com/alannnn-estrada/Pagina-Web-Responsiva" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> Pagina-Web-Responsiva ⭐ <span class="badge rounded-pill text-bg-dark">Publico</span></a>
+            </div>
+            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
+                <a href="https://github.com/alannnn-estrada/NERVELECTRODOMESTICOS-PROYECT-POO-POE" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> Graficas-TESCH ⭐ <span class="badge rounded-pill text-bg-dark">Publico</span></a>
+            </div>
+            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
+                <a href="https://github.com/alannnn-estrada/CECYTEM-PAGINA-WEB" class="btn btn-outline-secondary p-3 disabled"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> CECYTEM-PAGINA-WEB ⭐ <span class="badge rounded-pill text-bg-dark">Publico</span></a>
+            </div>
+            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
+                <a href="https://github.com/alannnn-estrada/NERVELECTRODOMESTICOS-PROYECT-POO-POE" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> PROYECT-POO-POE <span class="badge rounded-pill text-bg-dark">Publico</span></a>
+            </div>
+            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
+                <a href="https://github.com/alannnn-estrada/Python-Proyects" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> Python-Proyects <span class="badge rounded-pill text-bg-dark">Publico</span></a>
+            </div>
+
+            <div class="text-color text-center" id="Proyectos"><h3>Proyectos Web</h3></div>
+
+            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
+                <a href="https://alannnn-estrada.github.io/Pagina-Web-Responsiva/" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> Pagina Web Responsiva <span class="badge rounded-pill text-bg-dark">Dale click</span></a>
+            </div>
+            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
+                <a href="https://cecytemixp2.000webhostapp.com/" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> Pagina Web "CECYTEM" <span class="badge rounded-pill text-bg-dark">Dale Click</span></a>
+            </div>
+            <div class="text-color text-center" id="Contacto">
+                <h3>Mis redes sociales / medios de contacto:</h3>
             </div>
             <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
                 <a href="https://www.instagram.com/https_alann.estrada/" class="btn btn-outline-secondary p-3"><img
@@ -63,8 +148,8 @@
                     <span class="badge rounded-pill text-bg-dark">Dale click</span></a>
             </div>
 
-            <div class="text-color text-center">
-                <h3>Link de mis playlist en Spotify</h3>
+            <div class="text-color text-center" id="Spotify">
+                <h3>Link de mis playlist en Spotify:</h3>
             </div>
             <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
                 <a href="https://open.spotify.com/playlist/2aepxluSYLkIgXymloieZt?si=9nqnzkTRSqOdd_v5MvB2Ow"
@@ -90,44 +175,39 @@
                         align="left"> Musica Para Jugar Rocket League O Algo Asi
                     <span class="badge rounded-pill text-bg-dark">Dale click</span></a>
             </div>
-
-            <h3 class="text-center text-color">Algunos de mis proyectos en GITHUB:</h3>
-            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
-                <a href="https://github.com/alannnn-estrada/Mi-Pagina-Web" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> Mi-Pagina-Web <span class="badge rounded-pill text-bg-dark">Publico</span></a>
-            </div>
-            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
-                <a href="https://github.com/alannnn-estrada/NERVELECTRODOMESTICOS-PROYECT-POO-POE" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> NERVELECTRODOMESTICOS-PROYECT-POO-POE <span class="badge rounded-pill text-bg-dark">Publico</span></a>
-            </div>
-            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
-                <a href="https://github.com/alannnn-estrada/CECYTEM-PAGINA-WEB" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> CECYTEM PAGINA WEB <span class="badge rounded-pill text-bg-dark">Publico</span></a>
-            </div>
-            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
-                <a href="https://github.com/alannnn-estrada/PROYECTOS-CECYTEM" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> Proyectos CECYTEM <span class="badge rounded-pill text-bg-dark">Publico</span></a>
-            </div>
-            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
-                <a href="https://github.com/alannnn-estrada/Python-Proyects" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> Python-Proyects <span class="badge rounded-pill text-bg-dark">Publico</span></a>
-            </div>
-            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
-                <a href="https://github.com/alannnn-estrada/NERVELECTRODOMESTICOS-PROYECT-POO-POE" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> NERVELECTRODOMESTICOS-PROYECT-POO-POE <span class="badge rounded-pill text-bg-dark">Publico</span></a>
-            </div>
-            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
-                <a href="https://github.com/alannnn-estrada/NERVELECTRODOMESTICOS-PROYECT-POO-POE" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> NERVELECTRODOMESTICOS-PROYECT-POO-POE <span class="badge rounded-pill text-bg-dark">Publico</span></a>
-            </div>
-            <div class="text-color text-center"><h3>Links directos de GITHUB.IO y otros</h3></div>
-            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
-                <a href="https://alannnn-estrada.github.io/Mi-Pagina-Web/" class="btn btn-outline-secondary p-3"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> Link de mi otra pagina web xd <span class="badge rounded-pill text-bg-dark">Dale click</span></a>
-            </div>
-            <div class="m-4 d-grid gap-2 col-6 mx-auto bg-dark">
-                <a href="https://linktr.ee/alann_estrada_" class="btn btn-outline-secondary p-3 disabled"><img src="img/image.png" width="20" height="20" class="img-fluid" align="left"> Link de mi pagina web "CECYTEM" <span class="badge rounded-pill text-bg-dark">Dale Click</span></a>
-            </div>
+            <br>
         </div>
     </header>
-   <footer class="pie-pagina text-center text-md-left bg-dark text-white">
+
+   <footer id="footer" class="pie-pagina text-center text-md-left fixed-bottom bg-dark text-white">
         <div class="container">
             <p class="m-0 py-3">&copy; Sigueme si te interesa saber un poco de mi.</p>
         </div>
     </footer>
         <!---->
+    <script>
+        fetch("js/github-colors.json")
+            .then((response) => response.json())
+            .then((languageColors) => {
+                const languageElements = document.querySelectorAll(".language");
+                languageElements.forEach((element) => {
+                    const languageName = element.dataset.language;
+                    const color = languageColors[languageName];
+                    if (color) {
+                        element.style.color = color;
+                    }
+                });
+            })
+            .catch((error) => {
+                console.error("Error al cargar el JSON:", error);
+            });
+    </script>
+    <script>
+        function mostrarContenido() {
+            var habilidades = document.getElementById('Habilidades');
+            habilidades.style.display = 'block';
+        }
+    </script>
     <script src="js/particles.min.js"></script>
     <script src="js/particlesOriginal.js"></script>
 
