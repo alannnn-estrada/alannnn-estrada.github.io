@@ -76,10 +76,10 @@
                 alto compromiso de responsabilidad en cada proyecto, busco constantemente innovar y encontrar soluciones óptimas para
                 abordar desafíos. Siempre dispuesto a dar lo mejor de mí en cada línea de código y en cada paso hacia el futuro
                 tecnológico. </p>
-                <a class="habilidades disabled" href="#Habilidades" onclick="mostrarContenido('Habilidades')">Habilidades</a>
+                <!--<a class="habilidades" href="#Habilidades" onclick="mostrarContenido('Habilidades')">Habilidades</a>-->
             </div>
         </div>
-        <div class="container text-warning text-center mt-3" id="Habilidades" style="display: none;">
+        <!--<div class="container text-warning text-center mt-3" id="Habilidades" style="display: none;">
             <h4>Tengo conocimientos en siguientes lenguajes</h4>
             <span class=" badge bg-dark mb-1">
                 <h4 class="language" data-language="PHP">PHP</h4>
@@ -93,7 +93,7 @@
             </span>
             <h5>Todos estos conocimientos se ven reflejados en mis proyectos (Estos son estimados, no son exactos, se pueden considerar basicos).</h5>
             <p>Me considero una persona que busca alternativas a las problemáticas que pueden surgir en los proyectos. </p>
-        </div>
+        </div>-->
         <div class="container py-3 text-center">
             
             <div id="Repositorios"></div>
@@ -181,7 +181,7 @@
         </div>
     </footer>
         <!---->
-    <script>
+    <!--<script>
         fetch("js/github-colors.json")
             .then((response) => response.json())
             .then((languageColors) => {
@@ -197,7 +197,7 @@
             .catch((error) => {
                 console.error("Error al cargar el JSON:", error);
             });
-    </script>
+    </script>-->
     <script>
         function mostrarContenido() {
             var habilidades = document.getElementById('Habilidades');
